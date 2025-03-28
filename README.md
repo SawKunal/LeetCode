@@ -8,7 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/SawKunal/Leet/tree/master/0001-two-sum) |
-## Hash Table
+## Tree
 |  |
 | ------- |
 | [0124-binary-tree](https://github.com/SawKunal/Leet/tree/master/0124-binary-tree-maximum-path-sum)
