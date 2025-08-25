@@ -12,8 +12,9 @@ class Solution {
         // return {};
         Hashtable<Integer, Integer> numbersFound = new Hashtable<>();
         for(int i=0; i<nums.length; i++){
-            if(numbersFound.containsKey(target - nums[i])){
-                return new int[]{numbersFound.get(target - nums[i]), i};
+            int complement = target -  nums[i];
+            if(numbersFound.containsKey(complement)){
+                return new int[]{numbersFound.get(complement), i};
             }
             numbersFound.put(nums[i], i);
         }
