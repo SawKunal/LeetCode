@@ -10,13 +10,13 @@ class Solution {
         // }
         // // Return an empty vector if no solution is found
         // return {};
-        Hashtable<Integer, Integer> numbersFound = new Hashtable<>();
+        Hashtable<Integer, Integer> map = new Hashtable<>();
         for(int i=0; i<nums.length; i++){
             int complement = target -  nums[i];
-            if(numbersFound.containsKey(complement)){
-                return new int[]{numbersFound.get(complement), i};
+            if(map.containsKey(complement)){
+                return new int[]{map.get(complement), i};
             }
-            numbersFound.put(nums[i], i);
+            map.put(nums[i], i);
         }
         return null;
     }
